@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando pseudoclasse</title>
+    <style>
+        div{
+            width: 500px;
+        }
+        div > img#ca{
+            display: none;
+        }
+        div > img#bay{
+            display: none;
+        }
+        div:hover > img#ca{
+            display: block;
+            width: 300px;
+        }   
+        div:hover > img#ornn{
+            display: none;
+        }
+        div:hover > img#garen{
+            display: none;
+        }
+        div:hover > img#bay{
+            display: block;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personagens de lol e suas representações na vida real</h1>
+    <p>passe o mouse por cima pra ver</p>
+    <div>
+        <img src="ornn.png" alt="" id="ornn">
+        <img src="800px-Domestic_Goat_Portrait_(aka).jpg" alt="" id="ca">
+    </div>
+    <div>
+        <img src="garen.jpg" alt="" id="garen">
+        <img src="dcd4bf28a3c27aefe9fc37c0f6c3c825b5258452_original.jpeg" alt="" id="bay">
+    </div>
+</body>
+</html>

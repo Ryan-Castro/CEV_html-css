@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+    background-color: #400000;
+}
+.rap{
+    background-color: blue;
+}
+h1{
+    color: #ffffff;
+    font-size: 4em;
+}
+h1#principal{
+    text-align: center;
+}
+
+
+h2{
+    color: #ffffff;
+}
+.destaque{
+    color: red;
+}
