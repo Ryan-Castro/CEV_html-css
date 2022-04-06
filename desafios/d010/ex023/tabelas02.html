@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela de joj mais vendidos</title>
+    <style>
+       
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            background-color: yellow;
+            font-size: 1.5em;
+            font-weight: bold;
+
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.verde{
+            background-color: green;
+        }
+        /*tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }*/
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        } 
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        .num{
+            text-align: right;
+        }
+        div.conteiner{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    
+    <div class="conteiner">
+        <table>
+            <colgroup>
+                <col class="verde">
+                <col class="vermelho">
+                <col class="amarelo">
+            </colgroup>
+            <caption>jogos mais vendidos</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Título</th>
+                    <th scope="col">Vendas</th>
+                    <th scope="col">Plataforma</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Minecraft</td>
+                    <td class="num">238.000.000</td>
+                    <td>Multi-plataforma</td>
+                </tr>
+                <tr>
+                    <td>Tetris</td>
+                    <td class="num">170.000.000</td>
+                    <td>Multi-plataforma</td>
+                </tr>
+                <tr>
+                    <td>Grand theaft Auto V</td>
+                    <td class="num">160.000.000</td>
+                    <td>Multi-plataforma</td>
+                </tr>
+                <tr>
+                    <td>Wii Sports</td>
+                    <td class="num">82.900.000</td>
+                    <td>Wii</td>
+                </tr>
+                <tr>
+                    <td>Pubg</td>
+                    <td class="num">75.000.000</td>
+                    <td>Multi-plataforma</td>
+                </tr>
+                <tr>
+                    <td>Super Mario Bros</td>
+                    <td class="num">58.000.000</td>
+                    <td>Multi-plataforma</td>
+                </tr>
+                <tr>
+                    <td>Mario Kart 8 / Deluxe</td>
+                    <td class="num">47.520.000</td>
+                    <td>Wii U/ Switch</td>
+                </tr>
+                <tr>
+                    <td>Pokémon Red / Green / Blue / Yellow</td>
+                    <td class="num">47.520.000</td>
+                    <td>Multi-plataforma</td>
+                </tr>
+                <tr>
+                    <td>Wii Fit/ Plus</td>
+                    <td class="num">43.800.000</td>
+                    <td>Wii</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
